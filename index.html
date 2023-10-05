@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="./img/Logo G&TO minimal.png">
+  <title>G&TO - Um novo Jeito de se vestir</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Quicksand&display=swap');
+  </style>
+
+  <script src="https://kit.fontawesome.com/6d12b3f40e.js" crossorigin="anonymous"></script>
+
+  <script>
+    function mensagem() {
+      alert("você será redirecionado para o seu servidor de email, caso não esteja logado no seu email, efetue o login e tente novamente")
+    }
+
+    function click_menu() {
+      if (itens.style.display = 'block') {
+        itens.style.display = 'none'
+      } else {
+        itens.style.display = 'block'
+      }
+    }
+
+    function tamanho_site() {
+      if (window.innerWidth > 768) {
+        itens.style.display = 'flex'
+      } else {
+        itens.style.display = 'none'
+      }
+    }
+
+  </script>
+
+</head>
+
+<body onresize="tamanho_site">
+
+  <header>
+    <div>
+      <nav class="alinhamento">
+        <div>
+          <a class="link_logo" href="#">
+            <img class="logo" src="./img/Logotipo G&TO (1).png" alt="O logotipo da Jeito 
+        é composto por uma fonte moderna e condensada, além disso,
+        a paleta de cores é bege,. O logo está em um fundo verde">
+          </a>
+        </div>
+        <div>
+          <ul class="menu" id="itens">
+            <li><a class="home" href="#">Home</a></li>
+            <li><a href="#">Quem Somos?</a></li>
+            <li><a href="#">Sobre a G&TO</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+  </header>
+
+  <div class="wrapper">
+    <main>
+      <section class="module parallax parallax-1">
+      </section>
+
+      <section class="module content">
+        <div class="container">
+          <h2>Isto é G&TO</h2>
+          <p>
+            A G&TO é a casa de moda ideal para quem busca roupas confortáveis e despojadas.
+            Apenas com produções naturais, somos a mais nova empresa comprometida com o movimento ESG.
+            Em menos de 1 mês a G&TO fará sua inesquecível estreia no mundo da moda,
+            a partir do dia 06/06 você poderá visitar nossa loja na aclimação e encomendar
+            seus produtos virtualmente, pelo nosso site ou app...
+          </p>
+        </div>
+      </section>
+
+      <section class="module parallax parallax-2">
+        <h1>Movimento ESG</h1>
+      </section>
+
+      <section class="module content">
+        <div class="container">
+          <h2>O que é o ESG?</h2>
+          <p>
+            Muitas empresas no mundo que fazem produtos e oferecem serviços que podem ser
+            prejudiciais para o meio ambiente e para as pessoas. Por exemplo, polição de ar, a água e
+            solo, outras nem se importam com os direitos das pessoas que trabalham para elas.
+            Mas nós da G&TO se preocupamos em fazer as coisas de modo que respeite o
+            meio ambiente, as pessoas e o nosso cliente!
+          </p>
+        </div>
+      </section>
+
+      <section class="module parallax parallax-3">
+        <h1>Lançamento dia 21 de Junho</h1>
+      </section>
+
+      <section class="formulario">
+        <p class="formulario_titulo">Ficou com alguma dúvida?</p>
+
+        <!-- C(criar) R(listar) U(atualizar) D(excluir) -->
+
+        <form method="post" action="mailto:geto@gmail.com" enctype="text/plain">
+          <div>
+            <label for="name">Nome:</label>
+            <input class="borda" type="texto" name="name" id="name">
+          </div>
+          <div>
+            <label for="email">Email:</label>
+            <input class="borda" type="email" id="email" name="email">
+          </div>
+          <div>
+            <label for="message">Mensagem:</label>
+            <textarea class="borda" name="message" id="message" cols="40" rows="6"></textarea>
+          </div>
+          <button class="btn_forms" type="submit" onclick="mensagem()">Enviar</button>
+        </form>
+      </section>
+
+      <section class="module content">
+        <div class="container">
+          <section class="contato" id="contato">
+            <h2 class="contato_titulo">Contato</h2>
+            <div class="conteudo_contato">
+              <div>
+                <iframe class="mapa"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.8858274884446!2d-46.635798424748245!3d-23.572543678792112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce599dea63714b%3A0x143b605fb0d3118!2zQXYuIGRhIEFjbGltYcOnw6NvLCA2NjYgLSBBY2xpbWHDp8OjbywgU8OjbyBQYXVsbyAtIFNQLCAwMTUzMi0wMTA!5e0!3m2!1spt-BR!2sbr!4v1683810122825!5m2!1spt-BR!2sbr"
+                  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+              <div class="contato_info">
+                <div class="info">
+                  <i class="fa-solid fa-phone"></i>
+                  <p>(99) 99999-9999</p>
+                </div>
+                <div class="info">
+                  <i class="fa-solid fa-envelope"></i>
+                  <p>contato@geto.com</p>
+                </div>
+                <div class="info">
+                  <i class="fa-sharp fa-solid fa-location-dot"></i>
+                  <p>Av. da Aclimação, 666 - SP</p>
+                </div>
+                <div class="info">
+                  <i class="fa-brands fa-instagram"></i>
+                  <p>@geto</p>
+                </div>
+                <div class="info">
+                  <i class="fa-brands fa-facebook"></i>
+                  <p>@geto</p>
+                </div>
+                <div class="info">
+                  <i class="fa-brands fa-tiktok"></i>
+                  <p>@geto</p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+
+    </main>
+  </div>
+  <footer>
+    <p>Todos os direitos reservados &#169; G&TO</p>
+    <div class="nome"></div>
+    <div class="nome"></div>
+    <div class="nome"></div>
+  </footer>
+</body>
+
+</html>
